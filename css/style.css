@@ -119,6 +119,24 @@ img {
   background-color: #262C27;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header__btn:hover {
+  color: #262C27;
+  background-color: #B9C400;
+
+}
+
+.header__phone {
+  width: 170px;
+  text-align: center;
+  transition: font-size 0.3s;
+}
+
+.header__phone:hover {
+  font-size: 24px;
+  line-height: 27px;
 }
 
 .header__content {
@@ -251,10 +269,28 @@ img {
   cursor: pointer;
 }
 
+.popup-btn path,
+.popup-btn circle {
+  transition: all 0.3s;
+}
+
+.popup-btn:hover path {
+  fill: #B9C400;
+}
+
+.popup-btn:hover circle {
+  stroke: #B9C400;
+}
+
 .popup-btn span {
   display: block;
   padding-top: 12px;
   color: #fff;
+  transition: color 0.3s;
+}
+
+.popup-btn:hover span {
+  color: #0093A1;
 }
 
 .info__btn {
@@ -525,3 +561,85 @@ img {
 }
 
 /* Footer _____________ */
+
+.footer {
+  padding: 100px 0 80px;
+  background-color: #262C27;
+  color: #fff;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  margin-bottom: 27px;
+}
+
+.footer__logo {
+  align-self: flex-start;
+}
+
+.footer__logo path {
+  transition: fill 0.3s;
+}
+
+.footer__logo:hover path {
+  fill: #0093A1;
+}
+
+.footer__form {
+  max-width: 500px;
+}
+
+.footer__form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 57px;
+  color: #fff;
+}
+
+.footer__form-input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.2;
+}
+
+.footer__form-btn {
+  margin-bottom: 110px;
+  padding: 10px 66px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.footer__social-title {
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.footer__gallery {
+  display: grid;
+  gap: 52px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+.footer__menu-list {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
